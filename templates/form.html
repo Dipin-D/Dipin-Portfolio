@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-4">
+  <div class="text-center">
+    <h2>Contact Information</h2>
+    <p>Address: Huntsville, Alabama</p>
+    <p>Email Address: <a href="mailto:dipin.dawadi@bulldogs.aamu.edu">dipin.dawadi@bulldogs.aamu.edu</a></p>
+  </div>
+
+  <!-- Bootstrap 5 starter form -->
+  <form id="contactForm" method="POST" action="/submit-form">
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Your Name</label>
+      <input class="form-control" name="name" type="text" placeholder="Name" id="name" />
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Your Email Address</label>
+      <input class="form-control" name="emailAddress" type="email" placeholder="Email Address" id="emailAddress" />
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Your Message</label>
+      <textarea class="form-control" name="message" type="text" placeholder="Message" style="height: 10rem;" id="message"></textarea>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn btn-secondary btn-lg" type="submit">Submit</button>
+    </div>
+  </form>
+</div>
+{% endblock %}

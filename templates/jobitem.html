@@ -1,0 +1,14 @@
+<div class="border-bottom row" style="padding-bottom: 5px; color: rgb(90, 80, 120);">
+  <div class='col-5'>
+    <div style="color: rgb(120,120,120);">{{job['company'] }}</div>
+    <div><b>Location:</b>{{ job['location'] }}</div>
+  </div>
+
+  <div class='col-5'>
+    <div>{{ job['time'] }}</div>
+    <div><b>Title:</b>{{ job['title'] }}</div>
+  </div>
+  <div class='col-2'>
+    <a href="/description/{{job['id']}}" class="btn btn-outline-dark">Description</a>
+  </div>
+</div>
