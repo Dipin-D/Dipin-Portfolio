@@ -1,42 +1,36 @@
-{% extends 'base.html' %} 
-{% block content %}  
-  <div class="container">
-    
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container custom-content">
+
     <div class="text-center">
-      <img src="/static/Headshot.jpg" class="img-fluid rounded-circle" alt="Dipin's Headshot" width="250" height="250">
-      </div>
-    
-    <!-- About Section-->
-        <section class="bg-light py-3 mt-4 mb-4">
-            <div class="container px-3">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xxl-8">
-                        <div class="text-center my-5">
-                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
-                            <p class="lead fw-light mb-4">My name is Dipin Dawadi.</p>
-                            <p class="text-muted">
-👋 I am a Computer Science student with a 4.0 GPA at Alabama A&M University, set to graduate in Fall 2026 . Proficient in Python, C++, and web development. I am💼 Interning at RDCT, with prior engineering and research experience. Passionate about tech and innovation. 🌐 Let's connect for collaboration! 
-#ComputerScience #TechEnthusiast #InnovationDriven</p>
-                          
-                        </div>
+        <img src="/static/Headshot.jpg" class="img-fluid rounded-circle" alt="Dipin's Headshot" width="250" height="250">
+    </div>
+
+    <section class="custom-bg-light py-3 mt-4 mb-4">
+        <div class="container px-3">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-xxl-8">
+                    <div class="text-center my-5">
+                        <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">About Me</span></h2>
+                        <p class="lead fw-light mb-4">My name is Dipin Dawadi.</p>
+                        <p class="text-muted">
+                            👋 I am a Computer Science student with a 4.0 GPA at Alabama A&M University, set to graduate in Fall 2026. I am proficient in Python, C++, and web development. 💼 Currently, I am interning at RDCT, with prior engineering and research experience. Moreover, I am passionate about tech and innovation. 🌐 Let's connect for collaboration! #ComputerScience #TechEnthusiast #InnovationDriven
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-
-    
     <h2 class='text-center'>EXPERIENCES</h2>
 
-    
     <div>
-      {% for job in jobs %}
-          {% include 'jobitem.html' %}
-      {% endfor %}
+        {% for job in jobs %}
+            {% include 'jobitem.html' %}
+        {% endfor %}
     </div>
 
-
+</div>
 </div>
 {% endblock %}
-
-

@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .custom-navbar {
+            background: #87CEEB; 
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar custom-navbar">
         <div class="container-fluid">
             <div class="d-flex align-items-center">
                 <img src="/static/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top me-4">
                 <a class="navbar-brand me-4" href="/">Home</a>
                 <a class="navbar-brand" href="/form">Contact Me</a>
             </div>
-            <!-- Download Resume Link with the same gap as between the logo and "Home" -->
+           
             <a href="{{ url_for('download_resume') }}" class="btn btn-secondary ms-4">Download Resume</a>
         </div>
     </nav>
 
     <div class="container py-4">
-        <!-- Your content goes here -->
     </div>
 </body>
 </html>
